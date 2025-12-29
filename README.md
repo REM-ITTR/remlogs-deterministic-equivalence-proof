@@ -76,3 +76,17 @@ This proof does not claim improved relevance or quality.
 It demonstrates that:
 Identical search results can be obtained from a smaller search space,
 provably and reproducibly.
+
+## Datasets
+
+The deterministic reduction and strict BM25 equivalence verification
+were executed across multiple heterogeneous text corpora, including:
+
+- The Enron Email Corpus
+- SEC / EDGAR filing text from multiple issuers
+- Additional long-form document corpora (four total corpora evaluated)
+
+These datasets were selected to cover materially different
+document structures, vocabulary distributions, and redundancy profiles.
+
+Equivalence results were consistent across all evaluated corpora.
