@@ -1,0 +1,18 @@
+BM25 Equivalence Check (FULL vs REDUCED+COUNTS reconstruction)
+FULL   : outputs/edgar_phraseprox_demo_20251228_1644/full_windows_w3.txt
+REDUCED: outputs/edgar_phraseprox_demo_20251228_1644/reduced_corpus.txt
+COUNTS : outputs/edgar_phraseprox_demo_20251228_1644/counts_map.json
+K      : 50
+QUERY  : cash flow | quantitative and qualitative disclosures
+
+STATUS: FAIL ❌  mismatches=9
+First 10 mismatches:
+- rank 16: FULL='mine safety disclosures ␟ 17 ␟ part ii...' vs RECON='to protect the company’s foreign currency–denominated term debt or marketable se...'
+- rank 17: FULL='item 4. ␟ mine safety disclosures ␟ 17...' vs RECON='mine safety disclosures ␟ 17 ␟ part ii...'
+- rank 18: FULL='17 ␟ item 4. ␟ mine safety disclosures...' vs RECON='item 4. ␟ mine safety disclosures ␟ 17...'
+- rank 19: FULL='to protect the company’s foreign currency–denominated term debt or marketable se...' vs RECON='17 ␟ item 4. ␟ mine safety disclosures...'
+- rank 32: FULL='assets: ␟ current assets: ␟ cash and cash equivalents $ 29,965 $ 23,646...' vs RECON='the company believes its balances of cash, cash equivalents and unrestricted mar...'
+- rank 33: FULL='the company believes its balances of cash, cash equivalents and unrestricted mar...' vs RECON='assets: ␟ current assets: ␟ cash and cash equivalents $ 29,965 $ 23,646...'
+- rank 44: FULL='how we addressed the ␟ matter in our audit ␟ we tested controls relating to the ...' vs RECON='the company is exposed to credit risk and fluctuations in the values of its inve...'
+- rank 45: FULL='the company is exposed to credit risk and fluctuations in the values of its inve...' vs RECON='how we addressed the ␟ matter in our audit ␟ we tested controls relating to the ...'
+- rank 50: FULL='the company has entered into agreements for the supply of many components; howev...' vs RECON='the company uses derivative instruments, such as foreign currency forward and op...'

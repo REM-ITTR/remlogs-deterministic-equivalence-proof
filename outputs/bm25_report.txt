@@ -1,0 +1,9 @@
+BM25 Strict Equivalence Check (FULL-IDF locked; FULL avgdl locked)
+FULL   : outputs/edgar_phraseprox_demo_20251228_1644/full_windows_w3.txt
+REDUCED: outputs/edgar_phraseprox_demo_20251228_1644/reduced_corpus.txt
+COUNTS : outputs/edgar_phraseprox_demo_20251228_1644/counts_map.json
+K      : 50
+QUERY  : cash flow | quantitative and qualitative disclosures
+N(full) : 1551  avgdl(full): 61.502257
+
+STATUS: PASS ✅ (top-K doc identity matches under strict reconstruction)
